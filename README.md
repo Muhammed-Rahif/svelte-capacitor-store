@@ -27,7 +27,12 @@
 The **Svelte Capacitor Store** library is designed to provide advanced state management capabilities for Svelte applications. With support for persistent storage through `Capacitor Preferences` in native devices and `indexedDB` (default) or `localStorage`, which can enhance your ability to manage and maintain valid data across multiple platforms on a single code-base, with extra svelte sauces...
 
 ## Installation
-To install the library: `npm install svelte-capacitor-store` or copy `src/index.ts` and `src/indexeddb-wrapper.ts` directly to your project.
+To install the library: `npm install svelte-capacitor-store` or copy `src/index.ts` and `src/indexeddb-wrapper.ts` directly to your project. Add `@capacitor/preferences` plugin to your capacitor app and let capacitor update the required changes:
+```bash
+npm install @capacitor/preferences
+npx cap sync
+```
+More about setting up `@capacitor/preferences` at https://capacitorjs.com/docs/apis/preferences#install.
 
 ## Usage
 #### Configuration Options:
